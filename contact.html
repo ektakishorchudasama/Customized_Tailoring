@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>LoginPage-Milan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+             <img src="images/logo.jpeg" width="150px" height="150px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.jpeg" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    
+<!------ contact us ------>  
+    
+    <div class="Contact">
+        <div class="Content">
+            <h2>Contact Us</h2>
+            <p>We would love to respond to your queries and help you succeed.Feel free to get in touch with us.</p>
+        </div>
+        <div class="Container">
+            <div class="ContactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>1/1 Bansi Park,<br>Narsing Lane,Malad West,<br>Mumbai 400064,Maharashtra</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>7977088643</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>ekta.chudasama2000gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ContactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputbox">
+                        <button type="submit" class="btn">Send</button>
+                    </div>
+                </form>    
+          </div>
+      </div>
+    </div> 
+    
+      
+<!------- footer --------->
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Andriod and ios mobile phones.</p>
+                    <div class="app-logo">
+                        <img src="images/playstore.jpeg" height="45px;">
+                        <img src="images/istore.jpeg">
+                    </div>
+                </div>
+                
+                <div class="footer-col-2">
+                    <img src="images/logo.jpeg" width="200px" height="200px">
+                    <p>Online Custom Tailoring & Sewing Services for Women in Mumbai<br>
+                       In this digital age, the way we live is changing and so is the way we relate to fashion.
+                        If you’ve been wondering how your wardrobe can be better, we recommend that you stitch 
+                        clothes online as per your designs, taste and, most importantly, fit.</p>
+                </div>
+                
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Posts</li>
+                        <li>Join Affiliate</li>
+                        <li>Return Policies</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Milan Tailor's</p>
+        </div>
+    </div>
+       
+<!-----------js for toggle menu------->
+    
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>   
+    
+<!--------js for toggle form-------> 
+    
+    <script>
+        
+    var LoginForm = document.getElementById("LogiinForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+        
+        function register(){
+            
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+        
+        function login(){
+            
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+    
+    </script>
+    
+    
+</body>
+</html>
+   

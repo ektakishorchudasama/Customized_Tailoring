@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Products-details-Milan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+             <img src="images/logo.jpeg" width="150px" height="150px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.jpeg" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+<!------------ single product details ------->
+    
+    <div class="small-container single-product">
+        <div class="row">
+    <div class="col-2">
+        <img src="images/ladies%20special.jpeg" height="600px" id="product-img">
+        
+        <div class="small-img-row">
+        <div class="small-img-col">
+        <img src="images/wedding.jpeg" height="150px" class="small-img">
+        </div>
+        <div class="small-img-col">
+        <img src="images/white%20lehenga.jpeg" height="150px" class="small-img">
+        </div>
+        <div class="small-img-col">
+        <img src="images/newmarriage.jpeg" height="150px" class="small-img">
+        </div>
+        <div class="small-img-col">
+        <img src="images/gown.jpeg" height="150px" class="small-img">
+        </div>
+        </div>
+    </div>
+            <div class="col-2">
+                <p>Home / Lehenga</p>
+                <h2>TWINNING SPECIAL FOR SANGEET</h2>
+                <h4><b>$400</b></h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+                
+                <h3>Product Details</h3>
+                <br>
+                
+                <p>Exclusively hand made lehenga's available in different colours and styles.<br>BUY on This Diwali with more offers.</p>
+            </div>
+        </div>
+    </div>
+    
+<!--------------title--------> 
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+    
+<!-----------products-------->
+    
+        <div class="small container">
+        <div class="row">
+            <div class="col-4">
+                <img src="images/twin%20lehenga.jpeg" height="410px">
+                <h4>Wedding Special</h4>
+                <p>$200</p>
+            </div>
+            <div class="col-4">
+                <img src="images/haldi.jpeg" height="410px">
+                <h4>Wedding Special</h4>
+                <p>$200</p>
+            </div>
+            <div class="col-4">
+                <img src="images/princess.jpeg" height="410px">
+                <h4>Wedding Special</h4>
+                <p>$200</p>
+            </div>
+            <div class="col-4">
+                <img src="images/front.jpeg" height="410px">
+                <h4>Wedding Special</h4>
+                <p>$200</p>
+            </div>
+        </div>
+        </div>
+   
+<!------- footer --------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Andriod and ios mobile phones.</p>
+                    <div class="app-logo">
+                        <img src="images/playstore.jpeg" height="45px;">
+                        <img src="images/istore.jpeg">
+                    </div>
+                </div>
+                
+                <div class="footer-col-2">
+                    <img src="images/logo.jpeg" width="200px" height="200px">
+                    <p>Online Custom Tailoring & Sewing Services for Women in Mumbai<br>
+                       In this digital age, the way we live is changing and so is the way we relate to fashion.
+                        If you’ve been wondering how your wardrobe can be better, we recommend that you stitch 
+                        clothes online as per your designs, taste and, most importantly, fit.</p>
+                </div>
+                
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Posts</li>
+                        <li>Join Affiliate</li>
+                        <li>Return Policies</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Milan Tailor's</p>
+        </div>
+    </div>
+       
+<!-----------js for toggle menu------->
+    
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    
+<!----------js for product gallery------->
+    
+    <script>
+        
+        var ProductImg = document.getElementById("ProductImg");'
+        var SmallImg = document.getElementsByClassName("small-img");
+        
+         SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+         SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+         SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        }
+         SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        }
+         
+    </script>
+    
+</body>
+</html>
